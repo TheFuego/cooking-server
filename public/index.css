@@ -1,0 +1,36 @@
+main {
+    position: relative;
+    top: 4vw;
+    padding: 4vw;
+
+    display: flex;
+}
+
+.slide {
+    width: 16vw;
+    height: 22vw;
+
+    margin: 1vw;
+}
+
+.slide h1 {
+    font-size: 1.2rem;
+}
+
+.slide--img {
+    max-width: 14vw;
+    max-height: 14vw;
+    overflow: hidden;
+}
+
+.slide--img img {
+    max-height: 14vw;
+    overflow: hidden;
+    
+    transition: all 0.4s;
+}
+
+.slide--img img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

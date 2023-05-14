@@ -1,0 +1,33 @@
+main {
+    margin-left: 4vw;
+    margin-top: 6vw;
+}
+
+
+/****/
+
+.buttons, #form input[type=file]::file-selector-button {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(228, 24, 24);
+    cursor: pointer;
+    color: white;
+}
+
+.buttons:hover, #form input[type=file]::file-selector-button:hover {
+    background-color: rgb(241, 65, 65);
+}
+
+.inputs {
+    font-size: 1.2rem;
+    border: 1px solid rgb(48, 48, 48);
+    border-radius: 10px;
+    padding: 10px;
+    width: 20rem;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: flex-start; 
+}

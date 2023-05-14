@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form">
+        <input class="inputs" type="text" placeholder="Dish" maxlength="40"><br>
+        <input class="inputs" type="text" placeholder="Author" maxlength="20"><br>
+        <input class="inputs" type="number" min="2" max="999" placeholder="Preparation Time (in minutes)"><br>
+        <form id="imgForm" enctype="multipart/form-data">
+            <label for="img">Select image:</label><br>
+            <input type="file" id="img" name="photo" accept="image/*">
+        </form>
+        <h1>Description:</h1>
+        <textarea id="desc" maxlength="400"></textarea>
+        <h1>Ingredients:</h1>
+        <div id="input-field">
+            <input id="input" type="text">
+        </div>
+        <h1>Preparation:</h1>
+        <div class="step-container">
+            <textarea class="steps"></textarea>
+            <div class="step-counter">
+                <h1>1</h1>
+            </div>
+        </div>
+        <button class="buttons" id="nextStep">Next Step</button>
+        <!--<a href="recipe.html">
+            <button class="buttons" id="submitBtn">Submit Recipe!</button>
+        </a>-->
+        <button class="buttons" id="submitBtn">Submit Recipe!</button>
+    </div>
+
+    <main>
+        <div id="image">
+
+        </div>
+    </main>
+
+    
+    <nav>
+        <img src="logo.png">
+        <div id="menu">
+            <a href="index.html"><button class="menu--button">Home</button></a>
+            <a href="search.html"><button class="menu--button">Search</button></a>
+            <a href="form.html"><button id="add">+</button></a>
+        </div>
+    </nav>
+
+    <script src="form.js"></script>
+</body>
+</html>
